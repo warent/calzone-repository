@@ -2,6 +2,3 @@ parameters:
   downloadVolumeSize:
     description: "How much storage do you want to allocate for the downloads?"
     default: 1T
-  configVolumeSize:
-    description: "How much storage do you want to allocate to the configurations?"
-    default: 256M

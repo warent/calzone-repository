@@ -6,7 +6,7 @@ volumes:
   jackett-downloads:
     size: { { .Parameters.downloadVolumeSize } }
   jackett-config:
-    size: { { .Parameters.configVolumeSize } }
+    size: 32M
 
 deployments:
   jackett:
