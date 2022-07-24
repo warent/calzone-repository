@@ -1,3 +1,7 @@
+system:
+  memory: 2048
+  cpus: 2
+
 volumes:
   jackett-downloads:
     size: { { .Parameters.downloadVolumeSize } }
