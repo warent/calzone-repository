@@ -1,0 +1,13 @@
+volumes:
+  jackett-downloads:
+    size: { { .Parameters.downloadVolumeSize } }
+  jackett-config:
+    size: { { .Parameters.configVolumeSize } }
+
+deployments:
+  jackett:
+    public: true
+    image: lscr.io/linuxserver/jackett:latest
+    volumes:
+      - jackett-downloads:/downloads
+      - jackett-config:/config
