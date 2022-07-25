@@ -4,7 +4,7 @@ system:
 
 volumes:
   jackett-downloads:
-    size: { { .Parameters.downloadVolumeSize } }
+    size: {{.Parameters.downloadVolumeSize}}
   jackett-config:
     size: 32M
 
